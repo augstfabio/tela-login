@@ -1,0 +1,162 @@
+* {
+    margin:0 ;
+    padding: 0;
+}
+body {
+    background-image: url("../imgs/bg.svg");
+    background-size: cover;
+}
+.corpo {
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.formulario {
+    margin-top: -200px;
+    padding-top: 10px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(218, 72, 62, 0.651);
+    border-radius: 15px;
+    box-shadow: 0 0 15px;
+    animation: gradual 2s ease-in;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;  
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    padding-right: 30px;
+    height: 400px;
+    width: 700px;
+    animation: gradual 2.5s;
+}
+h1 {
+    color: rgb(218, 72, 62);
+    font-size: 80px;
+    font-family: 'Cabin', sem serifa;
+}
+h2 {
+    color: rgb(255, 245, 240);
+    font-size: 30px;
+    font-family: 'Cabin', sem serifa;
+}
+.p {
+    color: aliceblue;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Montserrat', sem serifa;
+}
+#ola {
+    color: aliceblue;
+}
+label {
+    color: aliceblue;
+    margin-left: -90px;
+    font-family: 'Montserrat', sem serifa;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input {
+    border: none;
+    outline: none;
+    text-indent: 30px;
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+button {
+    font-family:'Montserrat', sem serifa;
+    border: none;
+    background-color: rgb(103, 255, 103);
+    box-shadow: 0 0 10px;
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:transform 0.2s ease;
+
+}
+#campo-senha {
+    margin-top: 20px;
+}
+
+
+footer {
+    height: 20vh;
+    background-color: #1433883f;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+.rodape ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.rodape li a {
+    text-decoration: none;
+    color: #000000;
+}
+::placeholder {
+    font-family: 'Montserrat', sem serifa;;
+}
+button:hover {
+    background-color: rgb(57, 145, 57);
+    transform: scale(1.1);
+}
+@keyframes gradual {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width:600px) {
+    .corpo {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .apresentacao {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+   .formulario {
+        margin: 0;
+        margin-top: 40px;
+   }
+}
